@@ -1,11 +1,27 @@
 {
-  "name": "vue-ui",
+  "name": "vue-ui-template",
   "version": "0.1.0",
-  "private": true,
+  "description": "vue组件库",
+  "main": "dist/index.umd.js",
+  "keywords": [
+    "vue",
+    "vue-ui",
+    "ui",
+    "vue-ui-template"
+  ],
+  "author": "huangxiaofen",
+  "files": [
+    "dist",
+    "components"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "build": "npm run build:js && npm run build:css",
+    "lint": "vue-cli-service lint",
+    "build:js": "webpack --config ./webpack.component.js",
+    "build:css": "npx gulp sass",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
   },
   "dependencies": {
     "core-js": "^3.8.3",
@@ -19,7 +35,16 @@
     "@vue/cli-service": "~5.0.0",
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^8.0.3",
-    "vue-template-compiler": "^2.6.14"
+    "gulp": "^4.0.2",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-sass": "^5.1.0",
+    "node-sass": "^8.0.0",
+    "sass": "^1.61.0",
+    "sass-loader": "^13.2.2",
+    "vue-loader": "^15.10.0",
+    "vue-template-compiler": "^2.6.14",
+    "vuepress": "^1.9.9",
+    "webpack-cli": "^5.0.1"
   },
   "eslintConfig": {
     "root": true,
