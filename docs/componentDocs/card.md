@@ -2,11 +2,11 @@
 卡片组件
 
 ### 示例
-<m-card imgSrc='/logo.png' summary="组件测试"></m-card>
+<m-card imgSrc='/vueUI/logo.png' summary="组件测试"></m-card>
 
 ### 代码
 ```html
-<m-card imgSrc='/logo.png' summary="组件测试"></m-card>
+<m-card imgSrc='/vueUI/logo.png' summary="组件测试"></m-card>
 ```
 
 ### Attrbutes

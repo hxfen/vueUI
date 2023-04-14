@@ -26,6 +26,8 @@
   },
   "dependencies": {
     "core-js": "^3.8.3",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^7.3.1",
     "vue": "^2.6.14"
   },
   "devDependencies": {
@@ -39,9 +41,7 @@
     "gulp": "^4.0.2",
     "gulp-minify-css": "^1.2.4",
     "gulp-sass": "^5.1.0",
-    "node-sass": "^8.0.0",
     "sass": "^1.61.0",
-    "sass-loader": "^13.2.2",
     "vue-loader": "^15.10.0",
     "vue-template-compiler": "^2.6.14",
     "vuepress": "^1.9.9",

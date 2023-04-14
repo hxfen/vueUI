@@ -1,6 +1,6 @@
 module.exports = {
-    base: 'vueUI',
-    title: 'vueUI',
+    base: '/vueUI/',
+    // title: 'vueUI',
     themeConfig: {
       sidebar: [
         '/',
