@@ -6,7 +6,7 @@
 
 ### 代码
 ```html
-<m-card imgSrc='/vueUI/logo.png' summary="组件测试"></m-card>
+<m-card :imgSrc="$withBase('/logo.png')" summary="组件测试"></m-card>
 ```
 
 ### Attrbutes
